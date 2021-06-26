@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://bootstrap-4.ru/docs/4.0/components/carousel/#carouselExampleIndicators">
+</head>
+
+    <title>Blog</title>
+</head>
+<body>
+    <div class="container">
+        <header class="col-md-12 border rounded dark">
+            <h1>Blog Name</h1>
+            <label  class="dark-change"></label>	
+        </header>
+        <div class="row">
+            <main class="col-lg-8 col-md-7 col-sm-12">
+                <section class="card dark">
+                    <div class="card-header dark">
+                         <h3>Title</h3>
+                         <small>Date: June 7, 2021</small>           
+                    </div>
+                    <div class="card-body dark">
+                            <div class="img">
+                                <img src="" alt="">
+                            </div>
+                            <p>Some text</p>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Voluptates incidunt voluptatem eveniet et rem ex officiis ratione.
+                                Libero eaque ad repellendus itaque deleniti, maxime enim excepturi 
+                                asperiores at accusantium. Animi.
+                            </p>        
+                    </div>
+                </section>
+                <section class="card dark">
+                    <div class="card-header dark">
+                         <h3>Title</h3>
+                         <small>Date: June 7, 2021</small>           
+                    </div>
+                    <div class="card-body dark">
+                            <div id="carousel" class="carousel slide" data-ride="carousel">
+                                <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                </a>
+                                <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                </a>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <div class= "img" alt="slide1" title="slide1">1</div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class= "img" alt="slide2" title="slide2">2</div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class= "img" alt="slide3" title="slide2">3</div>
+                                    </div>
+                                </div>
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carousel" data-slide-to="1" ></li>
+                                    <li data-target="#carousel" data-slide-to="2" ></li>
+                                </ol>    
+                            </div>
+                            <p>Some text</p>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Voluptates incidunt voluptatem eveniet et rem ex officiis ratione.
+                                Libero eaque ad repellendus itaque deleniti, maxime enim excepturi 
+                                asperiores at accusantium. Animi.
+                            </p>        
+                    </div>
+                </section>
+            </main>
+            <aside class="col-lg-4 col-md-5 col-sm-12">
+                <section class="card dark">
+                    <h2 class="card-header dark">About Me</h2>
+                    <div class="card-body dark">
+                        <div class="img">Image</div>
+                        <p>Lorem...</p>
+                    </div>
+                </section>
+                <section class="card dark">
+                    <h3 class="card-header dark">News</h3>
+                    <div class="card-body dark">
+                        <a data-toggle="modal" href = "#ModalWindow1">
+                            <div class="img"></div>
+                        </a>
+                        <a data-toggle="modal" href = "#ModalWindow2">
+                            <div class="img"></div>
+                        </a>
+                        <a data-toggle="modal" href = "#ModalWindow3">
+                            <div class="img"></div>
+                        </a>
+                    </div>
+                </section>
+                <section class="card dark">
+                    <h3 class="card-header dark">Follow Me</h3>
+                    <div class="card-body dark">
+                        <a class="link" href = "https://www.facebook.com/">
+                            <i class="icon fa fa-facebook-official" aria-hidden="true"></i>
+                        </a>
+                        <a class="link" href = "https://www.instagram.com/">
+                            <i class="icon fa fa-instagram" aria-hidden="true"></i>
+                        </a>
+                        <a class="link" href = "https://telegram.org/">
+                            <i class="icon fa fa-telegram" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </section>       
+            </aside>
+        </div>
+        <footer class="col-md-12 border rounded dark">
+            <p>Copyright © RoboCode 2021</p>
+        </footer>
+    </div>
+
+
+    <div class="modal fade" id="ModalWindow1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Modal title 1</h5>
+                    <button type="button" class="close" data-dismiss="modal">x</button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Tempora, architecto praesentium amet aliquam laboriosam officiis.
+                        Culpa iste in officiis, facilis mollitia dolores impedit nobis?
+                        Deleniti eveniet velit, animi asperiores dolorem.
+                    </p>    
+                </div>
+                <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>	
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="ModalWindow2">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Modal title 2</h5>
+                    <button type="button" class="close" data-dismiss="modal">x</button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Tempora, architecto praesentium amet aliquam laboriosam officiis.
+                        Culpa iste in officiis, facilis mollitia dolores impedit nobis?
+                        Deleniti eveniet velit, animi asperiores dolorem.
+                    </p>    
+                </div>
+                <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>	
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="ModalWindow3">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Modal title 3</h5>
+                    <button type="button" class="close" data-dismiss="modal">x</button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Tempora, architecto praesentium amet aliquam laboriosam officiis.
+                        Culpa iste in officiis, facilis mollitia dolores impedit nobis?
+                        Deleniti eveniet velit, animi asperiores dolorem.
+                    </p>    
+                </div>
+                <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>	
+            </div>
+        </div>
+    </div>
+<script src="script.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+</html>

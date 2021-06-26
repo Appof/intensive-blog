@@ -1,0 +1,107 @@
+body {
+    font-family: Roboto;
+    padding: 20px;
+    background: #e6e7ed;
+}
+
+header{
+    background: #fed136;
+    padding: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.card{
+    margin-bottom: 20px;
+}
+
+.card-header {
+    background-color: #fed13699;
+    transition: 0.2s;
+}
+
+.card:hover .card-header {
+    background-color: #fed136;
+}
+
+.img {
+    height: 200px;
+    background-color: #aaa;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-size: cover;
+    background-position: center;
+}
+
+aside .card:nth-child(2) .img{
+    height: 60px;
+}
+
+.icon{
+    font-size: 20px;
+    padding-right: 15px;
+}
+
+.card-body > .link{
+    text-decoration: none;
+    transition: color .2s;
+    color: #000;
+}
+
+.link:hover{
+    color: #aaa;
+}
+
+footer{
+    background-color: #fed136;
+    text-align: center;
+    padding:10px;	 
+}
+
+.carousel-item > .img{
+    height: 300px;
+}
+
+label{
+	position: absolute;
+	width: 45px;
+	height: 26px;
+	right: 20px;
+	top: 20px;
+	border:2px solid;
+	border-radius: 20px;
+	
+}
+
+label:before{
+	position: absolute;
+	content: "";
+	width: 20px;
+	height: 20px;
+	left: 1px;
+	top: 1px;
+	border-radius: 50%;
+	cursor: pointer;
+	background: black;
+	transition: 0.4s;
+}
+
+label.active:before{
+    left:21px;
+    background: rgba(255, 255, 255, 0.8);
+    color: black;
+}
+  
+body.night{
+    background: #20222c;
+    color: #fff;
+}
+
+.theme{
+    background: #4d3b00;
+    border: none !important;
+}
+  
+.card.theme:hover .card-header {
+    background-color:  #997500;
+}
